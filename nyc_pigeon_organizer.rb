@@ -25,7 +25,7 @@ def nyc_pigeon_organizer (data)
   new_hash = {}
 
   data.each do |descriptor_keys, descriptor_values|
-    descrptor_values.each do |options, array|
+    descriptor_values.each do |options, array|
       #binding.pry
       array.each do |name|
         new_hash[name] = {:color => [], :gender => [], :lives => []}
@@ -38,7 +38,7 @@ def nyc_pigeon_organizer (data)
     names.each do |bird_name|
       #binding.pry
       new_keys.each do |item|
-        binding.pry
+        #binding.pry
         if bird_name === item
           new_hash[item][:color] << bird_color.to_s
         end
