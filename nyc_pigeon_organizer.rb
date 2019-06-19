@@ -33,9 +33,10 @@ def nyc_pigeon_organizer (data)
     end
   end
   x = final.keys
-  binding.pry
+  #binding.pry
   data[:color].each do |bird_color, name|
     name.each do |bird_name|
+      binding.pry
       x.each do |item|
         if bird_name === item
           final[item][:color] << bird_color.to_s
