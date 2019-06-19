@@ -38,7 +38,7 @@ def nyc_pigeon_organizer (data)
     names.each do |bird_name|
       #binding.pry
       new_keys.each do |item|
-        #binding.pry
+        binding.pry
         if bird_name === item
           new_hash[item][:color] << bird_color.to_s
         end
